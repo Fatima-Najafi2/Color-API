@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="app">
+        <h1>Color Schemes Generator</h1>
+        <h3>Click on color to copy</h3>
+        <form action="" id="form-color">
+          <div>
+             <input type="color" id="color-input" value="#cd1a12" />
+          </div>
+            <div>
+              <select name="" id="color-modes">
+            <option value="monochrome">Monochrome</option>
+            <option value="complement">Complement</option>
+            <option value="triad">Triad</option>
+            <option value="quad">Quad</option>
+            <option value="analogic-complement">Analogic complement</option>
+            <option value="monochrome-dark">Monochrome dark</option>
+            <option value="monochrome-light">Monochrome light</option>
+          </select>
+            </div>
+         <div class="button">
+           <button type="submit">Get color scheme</button>
+         </div>
+        </form>
+        <div class="colors-container" id="colors-container"></div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
