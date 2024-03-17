@@ -1,3 +1,4 @@
+// Fetch data 
 function fetchColors() {
   const selectedMode = document.getElementById('color-modes').value;
   const inputColor = document.getElementById('color-input').value.slice(1);
@@ -9,7 +10,7 @@ function fetchColors() {
     .then((data) => renderColors(data.colors))
     .catch((err) => console.log(err));
 }
-
+// Render the colors
 function renderColors(colors) {
   const colorsContainer = document.getElementById('colors-container');
   colorsContainer.innerHTML = '';
